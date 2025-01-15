@@ -12,7 +12,7 @@ public class ShoppingCart {
         double tax = 1.04;
         double total;
         String message = custName + " wants to purchase " + quantity + " " + itemDesc;
-
+        boolean outOfStock = false;
         // Calculating total cost
         total = (price * quantity) * tax;
 
@@ -22,9 +22,18 @@ public class ShoppingCart {
 
         // Test quantity and modify message if quantity > 1.
 
-
+        if(quantity > 1){
+            itemDesc = "Shirts";
+            itemDesc = "Shirts";
+            message = custName + " wants to purchase " + quantity + " " + itemDesc;
+        }
         // Test outOfStock and notify user in either case.
-
+        if( outOfStock == true){
+            System.out.println("Sorry that item is out of stock");
+        }else{
+            System.out.println(message);
+            System.out.println("Total cost with tax: " + total);
+        }
 
         return response;
     }
