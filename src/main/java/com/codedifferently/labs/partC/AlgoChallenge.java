@@ -2,7 +2,7 @@ package com.codedifferently.labs.partC;
 
 public class AlgoChallenge {
     public static void main(String[] args) {
-        
+
         System.out.println(startWithIx("mix snacks"));
         System.out.println(startWithIx("pix snacks"));
         System.out.println(startWithIx("piz snacks"));
@@ -52,7 +52,7 @@ public class AlgoChallenge {
             return two;
         }else{
             return one;
-        }
+        }//hi
 
     }
 
